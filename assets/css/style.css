@@ -1,0 +1,484 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.cleaner{
+	clear: both;
+}
+
+body{
+	font-family: 'Rubik', sans-serif;
+}
+
+:root{
+	--text-highlight: #9AD93D;
+}
+
+/* Boje koje bi mogle kao zelena: #79D96A, #4ED957, #59D961 - ova za sad, #ABD948, #9AD93D Ovo je dobitnik*/
+
+a{
+	text-decoration: none;
+	color: #FFFDD1;
+}
+
+a:hover{
+	color: #9AD93D /*OVO KORISTIS U FOOTERU*/;
+}
+
+ol, ul{
+	list-style-type: none;
+}
+
+h1{
+	font-weight: normal;
+}
+
+header{
+	width: 100%;
+	/*background-color: #FFFDD1; Ivory bas mekana*/
+	/*background-color: #F8F0C6; Ivory malo jaca*/
+	/*background-color: #947352; Braon - Licni favorit za sad*/
+	/*background-color: #C29B6C; Tamno zelena se lepo istice na ovoj svetloj braon */
+	/* 718F38 Tamno zelena za h2 naslove */
+	background-color: #261711; /*background-color: #725A3C; Tamna braon, svetlo zelena ide bas lepo uz nju, 3. boja bi mogla ivory uz ovo */
+}
+
+.center-block{
+	margin: 0px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 80%;
+	padding: 15px 0px;
+}
+
+#logo-pic{
+	float: left;
+	margin-left: 45px;
+}
+
+#logo-pic img{
+	height: 100px;
+}
+
+#logo-text{
+	float: left;
+	margin: 0px auto;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#logo-text h1{
+	font-size: 42px;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.light-green{
+	color: var(--text-highlight);
+}
+
+.dark-green{
+	color: #ABD948;
+}
+
+#nav-menu ul li{
+	display: inline;
+}
+
+#nav-menu ul li a{
+	font-size: 24px;
+	text-transform: capitalize;
+	margin-right: 20px;
+}
+
+#search-bar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+}
+
+#search-bar i{
+	margin-left: 14px;
+	font-size: 24px;
+	text-align: center;
+	color: #FFFDD1;
+}
+
+#search-bar input[type = search]{
+	padding: 10px;
+	border: none;
+	border-radius: 15px;
+	background-color: #FFFDD1;
+	color: #5E5E5E;
+}
+
+#search-bar input[type = search]:focus{
+	color: #5E5E5E;
+}
+
+main{
+	
+}
+
+#cover{
+	height: 500px;
+	background-image: url("../img/cover.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#cover h2{
+	color: #FFFDD1;
+	text-align: center;
+	padding: 20px;
+	line-height: 60px;
+	font-size: 40px;
+}
+
+#cover p{
+	color: #FFFDD1;
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+	padding-bottom: 20px;
+}
+
+#transparent-background{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height: inherit;
+	position: relative;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#cover-content{
+	background: rgba(0, 0, 0, 0.6);
+	margin-left: 195px;
+}
+
+.blok-holder{
+	width: 100%;
+	border-bottom: 3px solid #ddd;
+}
+
+.blok-red{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 0px;
+}
+
+.naslov-oblasti{
+	margin-top: 20px;
+}
+
+.naslov-2{
+	margin-top: 30px;
+}
+
+.naslov-oblasti h3{
+	color: var(--text-highlight);
+	font-size: 38px;
+	text-align: center;
+}
+
+.naslov-oblasti p{
+	color: var(--text-highlight);
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+.zanimljivosti-blok{
+	height: 470px;
+	width: 39%;
+	padding-top: 15px;
+}
+
+.zanimljivosti-blok img{
+	height: 305px;
+	width: 100%;
+	box-shadow: 5px 7px 18px #888888;
+	border-radius: 10px;
+}
+
+.zanimljivosti-blok h4{
+	margin-top: 16px;
+	color: var(--text-highlight);
+	font-size: 24px;
+}
+
+.zanimljivosti-blok p{
+	margin-top: 12px;
+	font-size: 18px;
+}
+
+.zanimljivosti-blok a{
+	color: var(--text-highlight);
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.pocetna-izlozbe-blok{
+	width: 30%;
+	height: 470px;
+}
+
+.pocetna-izlozbe-blok h4{
+	margin-top: 16px;
+	color: var(--text-highlight);
+	font-size: 28px;
+	text-align: center;
+}
+
+.pocetna-izlozbe-blok img{
+	height: 270px;
+	width: 100%;
+	margin: 25px 0px;
+	box-shadow: 5px 7px 18px #888888;
+	border-radius: 10px;
+}
+
+.pocetna-izlozbe-blok p{
+	font-size: 18px;
+}
+
+footer{
+	width: 100%;
+	background-color: #261711;
+	margin-top: 55px;
+}
+
+.footer-blok-red{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.footer-naslovi{
+	justify-content: space-around;
+}
+
+.footer-naslov{
+	width: 25%;
+	text-align: center;
+}
+
+.footer-content{
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-social{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+footer h5{
+	font-size: 28px;
+	text-align: left;
+	color: #9AD93D;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+footer p{
+	font-size: 20px;
+	color: #FFFDD1;
+}
+
+footer a{
+	font-size: 20px;
+}
+
+footer i{
+	font-size: 20px;
+}
+
+#footer-kontakt{
+	width: 25%;
+}
+
+#footer-kontakt ul{
+	text-align: left;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5px 0px;
+}
+
+#footer-kontakt ul li{
+	color: #FFFDD1;
+	margin-right: 15px;
+}
+
+#footer-kontakt ul li i{
+	margin-right: 3px;
+}
+
+#footer-menu{
+	width: 25%;
+}
+
+#footer-menu ul{
+	text-align: left;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5px 0px;
+}
+
+#footer-menu ul li{
+	margin-bottom: 6px;
+}
+
+#footer-newsletter{
+	width: 25%;
+	text-align: center;
+}
+
+#footer-newsletter input[type = email]{
+	width: 50%;
+	padding: 12px;
+	margin-right: 20px;
+	border: none;
+	border-radius: 15px;
+	background-color: #FFFDD1;
+	color: #5E5E5E;
+}
+
+#footer-newsletter input[type = email]:focus{
+	color: #5E5E5E;
+}
+
+#footer-newsletter input[type = submit]{
+	cursor: pointer;
+	padding: 8px;
+	border: none;
+	border-radius: 10px;
+	color: #5E5E5E;
+	background-color: #FFFDD1;
+	font-family: 'Rubik', sans-serif;
+}
+
+::placeholder{
+	color: #5E5E5E;
+}
+
+#social{
+	text-align: center;
+	width: 35%;
+}
+
+#social ul li{
+	display: inline;
+}
+
+#social ul li a{
+	font-size: 30px;
+	text-align: center;
+}
+
+#social ul li a i{
+	margin-right: 15px;
+}
+
+#social ul li a .fa-facebook{
+	color: #FFFDD1;
+}
+
+#social ul li a .fa-twitter{
+	color: #FFFDD1;
+}
+
+#social ul li a .fa-youtube{
+	color: #FFFDD1;
+}
+
+#social ul li a .fa-instagram{
+	color: #FFFDD1;
+}
+
+#copyright{
+	width: 35%;
+}
+
+#copyright p{
+	font-size: 16px;
+	text-align: center;
+}
+
+.no-bot-pad{
+	padding-bottom: 5px;
+}
+
+/* Enciklopedija CSS */
+
+.doba-tekst{
+	width: 85%;
+	font-size: 17px;
+}
+
+.doba-tekst p{
+	margin-bottom: 16px;
+}
+
+.enciklopedija-blok{
+	width: 28%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.naziv-dinosaurusa{
+	font-size: 26px;
+	margin-bottom: 30px;
+	color: var(--text-highlight);
+}
+
+.naziv-dinosaurusa a{
+	font-size: 26px;
+	margin-bottom: 30px;
+	color: var(--text-highlight);
+}
+
+.slika-dinosaurusa{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.slika-dinosaurusa img {
+	width: 100%;
+	height: 230px;
+	box-shadow: 2px 3px 10px #888888;
+	transition: width 1s, height 1s;
+}
+
+.slika-dinosaurusa img:hover{
+	width: 470px;
+	height: 270px;
+}
+
+.podaci-dinosaurusa{
+	font-size: 17px;
+}
+
+.podaci-dinosaurusa td{
+	height: 50px;
+	width: 250px;
+	border-bottom: 3px solid #ddd;
+	padding: 10px 0px;
+}
+
+.podaci-dinosaurusa span{
+	font-weight: bold;
+}
