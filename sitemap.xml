@@ -1,0 +1,33 @@
+<?xml version = "1.0"?>
+<urlset xmlns = "http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://bluebutterbaby.github.io/Muzej-Istorije-Dinosaurusa/index.html</loc>
+		<lastmod>2023-03-14</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://bluebutterbaby.github.io/Muzej-Istorije-Dinosaurusa/enciklopedija.html</loc>
+		<lastmod>2023-03-14</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://bluebutterbaby.github.io/Muzej-Istorije-Dinosaurusa/izlozbe.html</loc>
+		<lastmod>2023-03-14</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://bluebutterbaby.github.io/Muzej-Istorije-Dinosaurusa/o-nama.html</loc>
+		<lastmod>2023-03-14</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://bluebutterbaby.github.io/Muzej-Istorije-Dinosaurusa/o-autoru.html</loc>
+		<lastmod>2023-03-14</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+</urlset>

@@ -28,6 +28,11 @@ a:hover{
 	color: #9AD93D;
 }
 
+.active{
+	color: #9AD93D;
+	border-bottom: 2px solid #9AD93D;
+}
+
 ol, ul{
 	list-style-type: none;
 }
@@ -166,6 +171,7 @@ main{
 #cover-content{
 	background: rgba(0, 0, 0, 0.6);
 	margin-left: 195px;
+	border-radius: 10px;
 }
 
 .blok-holder{
@@ -396,26 +402,6 @@ footer i{
 	margin-right: 15px;
 }
 
-#social i:hover{
-	color: red;
-}
-
-#social ul li a .fa-facebook{
-	color: #FFFDD1;
-}
-
-#social ul li a .fa-twitter{
-	color: #FFFDD1;
-}
-
-#social ul li a .fa-youtube{
-	color: #FFFDD1;
-}
-
-#social ul li a .fa-instagram{
-	color: #FFFDD1;
-}
-
 #copyright{
 	width: 35%;
 }
@@ -557,4 +543,32 @@ footer i{
 .izlozbe-text ul{
 	list-style-type: circle;
 	margin-left: 18px;
+}
+
+/* O Autoru CSS */
+
+#autor-slika{
+	width: 40%;
+	text-align: center;
+}
+
+#autor-slika img{
+	width: 70%;
+	border-radius: 15px;
+	box-shadow: 4px 3px 16px #888888;
+}
+
+#autor-text{
+	text-align: center;
+}
+
+#autor-text h4{
+	font-size: 28px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	color: var(--text-highlight);
+}
+
+#autor-text p{
+	font-size: 19px;
 }
