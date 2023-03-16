@@ -12,10 +12,12 @@ body{
 }
 
 :root{
-	--text-highlight: #9AD93D;
+	--text-highlight: #5cb85c;
+	
+	/* tamno zelena -  #5cb85c */
 }
 
-/* Boje koje bi mogle kao zelena: #79D96A, #4ED957, #59D961 - ova za sad, #ABD948, #9AD93D Ovo je dobitnik*/
+/* zelena - #9AD93D Ovo je dobitnik*/
 
 a{
 	text-decoration: none;
@@ -23,7 +25,7 @@ a{
 }
 
 a:hover{
-	color: #9AD93D /*OVO KORISTIS U FOOTERU*/;
+	color: #9AD93D;
 }
 
 ol, ul{
@@ -40,7 +42,6 @@ header{
 	/*background-color: #F8F0C6; Ivory malo jaca*/
 	/*background-color: #947352; Braon - Licni favorit za sad*/
 	/*background-color: #C29B6C; Tamno zelena se lepo istice na ovoj svetloj braon */
-	/* 718F38 Tamno zelena za h2 naslove */
 	background-color: #261711; /*background-color: #725A3C; Tamna braon, svetlo zelena ide bas lepo uz nju, 3. boja bi mogla ivory uz ovo */
 }
 
@@ -51,6 +52,9 @@ header{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	width: 80%;
+}
+
+.padding-blok{
 	padding: 15px 0px;
 }
 
@@ -78,7 +82,7 @@ header{
 }
 
 .light-green{
-	color: var(--text-highlight);
+	color: #9AD93D;
 }
 
 .dark-green{
@@ -173,7 +177,7 @@ main{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 20px 0px;
+	padding: 25px 0px;
 }
 
 .naslov-oblasti{
@@ -392,6 +396,10 @@ footer i{
 	margin-right: 15px;
 }
 
+#social i:hover{
+	color: red;
+}
+
 #social ul li a .fa-facebook{
 	color: #FFFDD1;
 }
@@ -461,6 +469,7 @@ footer i{
 	height: 230px;
 	box-shadow: 2px 3px 10px #888888;
 	transition: width 1s, height 1s;
+	border-radius: 10px;
 }
 
 .slika-dinosaurusa img:hover{
@@ -481,4 +490,71 @@ footer i{
 
 .podaci-dinosaurusa span{
 	font-weight: bold;
+}
+
+/* Izlozbe CSS */
+
+.izlozbe-blok{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.izlozbe-slika{
+	width: 55%;
+}
+
+.izlozbe-slika img{
+	width: 100%;
+	height: 500px;
+	border-radius: 10px;
+	box-shadow: 2px 3px 10px #888888;
+}
+
+.kraca-slika img{
+	height: 380px;
+}
+
+.duza-slika{
+	width: 60%;
+}
+
+.izlozbe-text{
+	width: 40%;
+}
+
+.kraci-text{
+	width: 35%;
+}
+
+.izlozbe-text p{
+	text-align: justify;
+	font-size: 16px;
+	padding-bottom: 20px;
+	line-height: 22px;
+}
+
+.izlozbe-text span{
+	font-weight: bold;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+
+.izlozbe-text .italic{
+	font-style: italic;
+	color: var(--text-highlight);
+}
+
+.izlozbe-text .p-size{
+	font-size: 16px;
+	color: var(--text-highlight);
+}
+
+.izlozbe-text .highlight-text{
+	color: var(--text-highlight);
+}
+
+.izlozbe-text ul{
+	list-style-type: circle;
+	margin-left: 18px;
 }
