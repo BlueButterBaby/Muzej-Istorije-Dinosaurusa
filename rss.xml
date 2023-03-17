@@ -1,9 +1,11 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <rss version = "2.0">
 	<channel>
-		<title>Obaveštenja Muzeja Istorije Dinosaurusa</title>
-		<link>https://bluebutterbaby.github.io/Muzej-Istorije-Dinosaurusa/</link>
-		<description>Kanal za obaveštenja</description>
+		<item>
+			<title>Obaveštenja Muzeja Istorije Dinosaurusa</title>
+			<link>https://bluebutterbaby.github.io/Muzej-Istorije-Dinosaurusa/</link>
+			<description>Kanal za obaveštenja</description>
+		</item>
 		<item>
 			<title>Nove izložbe</title>
 			<link>https://bluebutterbaby.github.io/Muzej-Istorije-Dinosaurusa/izlozbe.html</link>
