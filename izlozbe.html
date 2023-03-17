@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "sr">
 <head>
 	<title>Muzej Istorije Dinosaurusa</title>
 	
@@ -19,6 +19,9 @@
 	
 	<!-- Meta Tag -->
 	<meta charset = "utf-8" type = "text/html"/>
+	<meta name="keywords" content="dinosaurusa, dinosaurusi, muzeja" />
+    <meta name="description" content="Pogledajte šta možete videti od eksponata u našem muzeju." />
+    <meta name="author" content="Bojan Kozomara" />
 </head>
 <body>
 	<!-- Header -->
@@ -104,13 +107,13 @@
 				<div class = "blok-red">
 					<div class = "izlozbe-blok">
 						<div class = "izlozbe-text kraci-text">
-							<p><span>Izložbena sala kamenoloma omogućava posetiocima da vide zid od oko 1.500 kostiju dinosaurusa u
+							<p><span>Izložbena sala kamenoloma omogućava posetiocima da vide zid od oko <span class = "highlight-text">1.500 kostiju dinosaurusa</span> u
 							renoviranom, relaksirajućem prostoru.</span></p>
 							<p>Ovde možete gledati ostatke brojnih različitih vrsta dinosaurusa
-							iz doba kasne jure, uključujući <span class = "italic p-size">Alosaurusa</span>, <span class = "italic p-size">Apatosaurusa</span>, <span class = "italic p-size">Kamarasaurusa</span>, <span class = "italic p-size">Diplodokusa</span> i <span class = "italic p-size">Stegosaurus</span>,
+							iz doba kasne jure, uključujući <span class = "italic p-size">Alosaurusa</span>, <span class = "italic p-size">Diplodokusa</span> i <span class = "italic p-size">Stegosaurus</span>,
 							zajedno sa nekoliko drugih.</p>
 							<p><span>Postoji čak nekoliko mesta gde možete dodirnuti prave fosile dinosaurusa
-							stare <span class = "highlight-text">150 miliona godina</span>!</span></p>
+							stare <span class = "highlight-text">150 miliona godina!</span></span></p>
 							<p>Rendžeri su na raspolaganju da odgovore na pitanja, pomognu deci da popune
 							svoje "Junior Rendžer" knjižice i povremeno obezbede razgovore o različitim temama u vezi sa kamenolomom
 							ili dinosaurusima u toku posete.</p>
@@ -204,9 +207,9 @@
 				
 				
 				<div id = "footer-newsletter">
-					<form method = "" action = "" id = "newsletter">
-						<input type = "email" id = "mail" name = "mail" placeholder = "Unesite Vaš e-mail" required = "required" />
-						<input type = "submit" value = "Pošalji"/>
+					<form method = "GET" action = "newsletter.php" id = "newsletter">
+						<input type = "email" id = "nsMail" name = "nsMail" placeholder = "Unesite Vaš e-mail" required = "required" />
+						<input type = "submit" id = "nlSubmit" name = "nsSubmit" value = "Pošalji"/>
 					</form>
 				</div>
 			</div>

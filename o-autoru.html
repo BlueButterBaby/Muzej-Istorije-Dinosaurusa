@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "sr">
 <head>
 	<title>Muzej Istorije Dinosaurusa</title>
 	
@@ -19,6 +19,9 @@
 	
 	<!-- Meta Tag -->
 	<meta charset = "utf-8" type = "text/html"/>
+	<meta name="keywords" content="Beograd, ICT, Autoru" />
+    <meta name="description" content="Kratak opis o autoru." />
+    <meta name="author" content="Bojan Kozomara" />
 </head>
 <body>
 	<!-- Header -->
@@ -61,6 +64,7 @@
 		</div>
 	</header>
 	
+	<!-- Content -->
 	<main>
 		<div class = "center-block">
 			<div class = "blok-holder">
@@ -73,9 +77,9 @@
 					<div id = "autor-slika">
 						<img src = "assets/img/autor.jpeg" alt = "Slika autora" />
 						<div id = "autor-text">
-						<h4>Bojan Kozomara</h4>
+						<h4>Bojan Kozomara 138/22</h4>
 							<p>Rođen sam 11.04.2002. u Beogradu. Završio sam Elektrotehničku školu "Rade Končar" 2021. godine i upisao smer "IT" 2022. godine,
-							na Visokoj školi ICT pod brojem indeksa 138/22.</p>
+							na Visokoj školi ICT.</p>
 						</div>
 					</div>
 				</div>
@@ -131,9 +135,9 @@
 				
 				
 				<div id = "footer-newsletter">
-					<form method = "" action = "" id = "newsletter">
-						<input type = "email" id = "mail" name = "mail" placeholder = "Unesite Vaš e-mail" required = "required" />
-						<input type = "submit" value = "Pošalji"/>
+					<form method = "GET" action = "newsletter.php" id = "newsletter">
+						<input type = "email" id = "nsMail" name = "nsMail" placeholder = "Unesite Vaš e-mail" required = "required" />
+						<input type = "submit" id = "nlSubmit" name = "nsSubmit" value = "Pošalji"/>
 					</form>
 				</div>
 			</div>

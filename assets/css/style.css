@@ -13,11 +13,7 @@ body{
 
 :root{
 	--text-highlight: #5cb85c;
-	
-	/* tamno zelena -  #5cb85c */
 }
-
-/* zelena - #9AD93D Ovo je dobitnik*/
 
 a{
 	text-decoration: none;
@@ -41,13 +37,31 @@ h1{
 	font-weight: normal;
 }
 
+@keyframes spustanje{
+	0%{transform: translate(0px, -200px);}
+	100%{transform: translate(0px, 0px);}
+}
+
+@keyframes levo{
+	0%{transform: translate(-900px, 0px);}
+	100%{transform: translate(0px, 0px);}
+}
+
+@keyframes podizanje{
+	0%{transform: translate(0px, 200px);}
+	100%{transform: translate(0px, 0px);}
+}
+
+@keyframes fadein{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
 header{
 	width: 100%;
-	/*background-color: #FFFDD1; Ivory bas mekana*/
-	/*background-color: #F8F0C6; Ivory malo jaca*/
-	/*background-color: #947352; Braon - Licni favorit za sad*/
-	/*background-color: #C29B6C; Tamno zelena se lepo istice na ovoj svetloj braon */
-	background-color: #261711; /*background-color: #725A3C; Tamna braon, svetlo zelena ide bas lepo uz nju, 3. boja bi mogla ivory uz ovo */
+	background-color: #261711;
+	position: relative;
+	animation: spustanje 2s ease-out;
 }
 
 .center-block{
@@ -123,15 +137,11 @@ header{
 	border: none;
 	border-radius: 15px;
 	background-color: #FFFDD1;
-	color: #5E5E5E;
+	color: #000;
 }
 
 #search-bar input[type = search]:focus{
-	color: #5E5E5E;
-}
-
-main{
-	
+	color: #000;
 }
 
 #cover{
@@ -140,6 +150,7 @@ main{
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	animation: fadein 2s;
 }
 
 #cover h2{
@@ -172,6 +183,7 @@ main{
 	background: rgba(0, 0, 0, 0.6);
 	margin-left: 195px;
 	border-radius: 10px;
+	animation: levo 2s ease-out;
 }
 
 .blok-holder{
@@ -198,20 +210,21 @@ main{
 	color: var(--text-highlight);
 	font-size: 38px;
 	text-align: center;
+	animation: fadein 2s;
 }
 
 .naslov-oblasti p{
 	color: var(--text-highlight);
 	font-size: 20px;
 	text-align: center;
+	animation: fadein 2s;
 }
-
-
 
 .zanimljivosti-blok{
 	height: 470px;
 	width: 39%;
 	padding-top: 15px;
+	animation: fadein 2s;
 }
 
 .zanimljivosti-blok img{
@@ -241,6 +254,7 @@ main{
 .pocetna-izlozbe-blok{
 	width: 30%;
 	height: 470px;
+	animation: fadein 2s;
 }
 
 .pocetna-izlozbe-blok h4{
@@ -266,6 +280,7 @@ footer{
 	width: 100%;
 	background-color: #261711;
 	margin-top: 55px;
+	animation: podizanje 2s ease-out;
 }
 
 .footer-blok-red{
@@ -359,29 +374,30 @@ footer i{
 #footer-newsletter input[type = email]{
 	width: 50%;
 	padding: 12px;
-	margin-right: 20px;
+	margin-right: -5px;
 	border: none;
-	border-radius: 15px;
+	border-radius: 15px 0px 0px 15px;
 	background-color: #FFFDD1;
-	color: #5E5E5E;
+	color: #000;
 }
 
 #footer-newsletter input[type = email]:focus{
-	color: #5E5E5E;
+	color: #000;
 }
 
 #footer-newsletter input[type = submit]{
 	cursor: pointer;
-	padding: 8px;
+	padding: 12px;
 	border: none;
-	border-radius: 10px;
-	color: #5E5E5E;
+	border-radius: 0px 15px 15px 0px;
+	color: #000;
 	background-color: #FFFDD1;
+	border-left: 3px solid #9AD93D;
 	font-family: 'Rubik', sans-serif;
 }
 
 ::placeholder{
-	color: #5E5E5E;
+	color: #000;
 }
 
 #social{
@@ -420,6 +436,7 @@ footer i{
 .doba-tekst{
 	width: 85%;
 	font-size: 17px;
+	animation: fadein 2s;
 }
 
 .doba-tekst p{
@@ -431,6 +448,7 @@ footer i{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	animation: fadein 2s;
 }
 
 .naziv-dinosaurusa{
@@ -484,6 +502,7 @@ footer i{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	animation: fadein 2s;
 }
 
 .izlozbe-slika{
@@ -545,17 +564,142 @@ footer i{
 	margin-left: 18px;
 }
 
+/* O Nama CSS */
+
+.o-nama-blok{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	animation: fadein 2s;
+}
+
+.o-nama-slika{
+	width: 55%;
+}
+
+.o-nama-slika img{
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 2px 3px 10px #888888;
+}
+
+.o-nama-text{
+	width: 40%;
+}
+
+.o-nama-text p{
+	text-align: justify;
+	font-size: 17px;
+	padding-bottom: 20px;
+	line-height: 22px;
+}
+
+.o-nama-text span{
+	font-weight: bold;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+
+.o-nama-text .italic{
+	font-style: italic;
+	color: var(--text-highlight);
+}
+
+.o-nama-text .p-size{
+	font-size: 17px;
+	color: var(--text-highlight);
+}
+
+.o-nama-text .highlight-text{
+	color: var(--text-highlight);
+}
+
+/* Kontakt Forma */
+
+#o-nama-forma td{
+	padding: 0px 20px;
+	padding-bottom: 20px;
+}
+
+#o-nama-forma input{
+	font-family: 'Rubik', sans-serif;
+	font-size: 22px;
+}
+
+#o-nama-forma input[type = text]{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid var(--text-highlight);
+	width: 350px;
+	margin-bottom: 30px;
+	padding-bottom: 8px;
+}
+
+#o-nama-forma input[type = email]{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid var(--text-highlight);
+	width: 100%;
+	margin-bottom: 30px;
+	padding-bottom: 8px;
+}
+
+#o-nama-forma textarea{
+	font-family: 'Rubik', sans-serif;
+	border: 2px solid var(--text-highlight);
+	width: 100%;
+	margin-bottom: 30px;
+	font-size: 22px;
+	padding-top: 8px;
+	padding-left: 8px;
+	box-sizing: border-box;
+}
+
+#o-nama-forma input[type = submit]{
+	margin: 0px auto;
+	display: flex;
+	padding: 10px 70px;
+	font-size: 19px;
+	font-weight: bold;
+	border-radius: 10px;
+	transition: 0.7s;
+	transition-timing-function: ease-in-out;
+}
+
+#o-nama-forma input[type = submit]:hover{
+	background-color: var(--text-highlight);
+	
+}
+
+#o-nama-forma input::placeholder{
+	color: #000;
+}
+
+#o-nama-forma textarea::placeholder{
+	color: #000;
+}
+
+
 /* O Autoru CSS */
 
 #autor-slika{
 	width: 40%;
 	text-align: center;
+	animation: fadein 2s;
 }
 
 #autor-slika img{
 	width: 70%;
 	border-radius: 15px;
 	box-shadow: 4px 3px 16px #888888;
+	filter: grayscale(80%);
+	transition: filter 0.6s ease;
+}
+
+#autor-slika img:hover{
+	filter: grayscale(0%);
 }
 
 #autor-text{

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "sr">
 <head>
 	<title>Muzej Istorije Dinosaurusa</title>
 	
@@ -19,6 +19,9 @@
 	
 	<!-- Meta Tag -->
 	<meta charset = "utf-8" type = "text/html"/>
+	<meta name="keywords" content="muzej, dinosaurusa, dinosaurusi, Zemlje" />
+    <meta name="description" content="Informacije i istorija muzeja" />
+    <meta name="author" content="Bojan Kozomara" />
 </head>
 <body>
 	<!-- Header -->
@@ -67,7 +70,63 @@
 			<div class = "blok-holder">
 				<div class = "blok-red">
 					<div class = "naslov-oblasti">
-						<h3></h3>
+						<h3>O Muzeju</h3>
+					</div>
+				</div>
+				<div class = "blok-red">
+					<div class = "o-nama-blok">
+						<div class = "o-nama-slika">
+							<img src = "assets/img/muzej.jpg" alt = "Slika našeg muzeja"/>
+						</div>
+						
+						<div class = "o-nama-text">
+							<p><span>Osnovan 1983. godine, muzej je izrastao iz male kolekcije u <span class = "highlight-text">najveću</span> stalnu <span class = "highlight-text">izložbu
+							dinosaurusa</span> i drugog praistorijskog fosilnog materijala u Srbiji.</span></p>
+							<p>Smešten u centru grada, Muzej Istorije Dinosaurusa sada je jedna od glavnih turističkih
+							atrakcija Beograda i nudi interaktivni uvid u dugu i dinamičnu istoriju Zemlje.</p>
+							<p>U muzeju se nalaze modeli dinosaurusa nalik na život, čitavi skeleti, lobanje i
+							animatronski dinosaurusi, a posetioci mogu da se kreću kroz milione godina drevne
+							prošlosti Zemlje.</p>
+							
+							<p><span>Zasitite se <span class = "highlight-text">činjenicama</span> i <span class = "highlight-text">zabavom</span> o dinosaurusima i saznajte sve o gmizavcima koji su
+							nekada dominirali našom planetom.</span></p>
+							<p>Od kada su prvi put identifikovani 1800-ih, dinosaurusi
+							su podstakli maštu i dece i odraslih. Istražite istoriju ovih praistorijskih gmizavaca i
+							saznajte kako muzejska nauka nastavlja da otkriva uvide o tome kako su dinosaurusi izgledali
+							i kako su živeli.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "blok-holder">
+				<div class = "blok-red">
+					<div class = "naslov-oblasti">
+						<h3>Obratite nam se</h3>
+					</div>
+				</div>
+				<div class = "blok-red">
+					<div class = "o-nama-blok">
+						<div id = "o-nama-forma">
+							<form method = "GET" action = "poruke.php">
+								<table>
+									<tbody>
+										<tr>
+											<td><input type = "text" id = "tbIme" name = "tbIme" required = "required" placeholder = "Ime"/></td>
+											<td><input type = "text" id = "tbPrezime" name = "tbPrezime" required = "required" placeholder = "Prezime"/></td>
+										</tr>
+										<tr>
+											<td colspan = "2"><input type = "email" id = "tbEmail" name = "tbEmail" required = "required" placeholder = "E-mail"/></td>
+										</tr>
+										<tr>
+											<td colspan = "2"><textarea rows = "4" placeholder = "Ostavite Vašu poruku"></textarea></td>
+										</tr>
+										<tr>
+											<td colspan = "2"><input type = "submit" id = "tbSubmit" name = "tbSubmit" value = "Pošalji"/></td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -123,9 +182,9 @@
 				
 				
 				<div id = "footer-newsletter">
-					<form method = "" action = "" id = "newsletter">
-						<input type = "email" id = "mail" name = "mail" placeholder = "Unesite Vaš e-mail" required = "required" />
-						<input type = "submit" value = "Pošalji"/>
+					<form method = "GET" action = "newsletter.php" id = "newsletter">
+						<input type = "email" id = "nsMail" name = "nsMail" placeholder = "Unesite Vaš e-mail" required = "required" />
+						<input type = "submit" id = "nlSubmit" name = "nsSubmit" value = "Pošalji"/>
 					</form>
 				</div>
 			</div>
